@@ -14,11 +14,17 @@ router.get( '/register', function ( req, res, next ) {
 
 router.post( '/register', function ( req, res, next ) {
 
-  console.log(req.body);
+     console.log(req.body);
 
 
-  // res.render( 'register' , {error: 'email ya está siendo utilizado'});
-  res.render( 'register' , {message: 'Registro válido. Ya puedes hacer login'});
+    if (true) {
+
+       res.render( 'register' , {error: 'email ya está siendo utilizado'});
+    }else {
+
+       res.render( 'register' , {message: 'Registro válido. Ya puedes hacer login'});
+    }
+
 
 
 
