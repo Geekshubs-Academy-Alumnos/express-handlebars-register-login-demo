@@ -1,4 +1,5 @@
 var express = require('express');
+const User = require('../models/user');
 var router = express.Router();
 
 /* GET home page. */
@@ -16,19 +17,20 @@ router.post( '/register', function ( req, res, next ) {
 
      console.log(req.body);
 
+    new User(req.body)
+    .save()
+      .then( () => {
+        console.log('registro valido');
 
-    if (true) {
+       res.render( 'register', { message: 'Registro válido. Ya puedes hacer login' } );
 
-       res.render( 'register' , {error: 'email ya está siendo utilizado'});
-    }else {
+      })
+      .catch( (err) => {
+        console.log( 'registro invalido', err );
 
-       res.render( 'register' , {message: 'Registro válido. Ya puedes hacer login'});
-    }
+          res.render( 'register', { error: err.message } );
 
-
-
-
-
+      })
 } );
 
 module.exports = router;
