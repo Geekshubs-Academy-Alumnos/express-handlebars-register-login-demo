@@ -9,7 +9,8 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-require('./config/mongo.js');
+require( './config/mongo.js' );
+require('./config/nodemailer.js');
 
 
 // view engine setup

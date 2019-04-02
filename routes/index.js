@@ -1,5 +1,6 @@
 var express = require( 'express' );
 const User = require( '../models/user' );
+const email = require('../config/nodemailer.js');
 var router = express.Router();
 
 /* GET home page. */
@@ -22,7 +23,17 @@ router.post( '/register', function ( req, res, next ) {
         .then( () => {
             console.log( 'registro valido' );
 
+            email.transporter.sendMail( {
+                to: req.body.email,
+                subject: 'Registro correcto',
+                html: 'Welcome!'
+            }, ( error, info ) => {
+                console.log(error, info);
+            } );
+
+
             res.render( 'register', { message: 'Registro válido. Ya puedes hacer login' } );
+
 
         } )
         .catch( ( err ) => {
