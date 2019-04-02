@@ -1,7 +1,7 @@
-<h1>REGISTER VIEW</h1>
 
+<h1>LOGIN VIEW</h1>
 
-<form action="/register"
+<form action="/login"
     method="post">
 
     <input type="email"
@@ -13,7 +13,7 @@
         name="password"
         placeholder="password">
     <input type="submit"
-        value="registrarme!">
+        value="login!">
 </form>
 
 
@@ -29,7 +29,6 @@
     {{#if message}}
     <div class="message">
         {{message}}
-        <a href="/login">LOGIN</a>
     </div>
     {{/if}}
 </div>
