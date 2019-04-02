@@ -1,0 +1,32 @@
+<form action="/register"
+    method="post">
+
+    <input type="email"
+
+        name="email"
+        placeholder="email">
+    <input type="password"
+        pattern=".{8,}"
+        name="password"
+        placeholder="password">
+    <input type="submit"
+        value="registrarme!">
+</form>
+
+
+<div class="feedback">
+
+    {{#if error}}
+    <div class="error">
+        {{error}}
+    </div>
+    {{/if}}
+
+
+    {{#if message}}
+    <div class="message">
+        {{message}}
+        <a href="/login">LOGIN</a>
+    </div>
+    {{/if}}
+</div>
