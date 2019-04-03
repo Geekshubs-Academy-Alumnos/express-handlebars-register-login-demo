@@ -16,6 +16,16 @@
         value="login!">
 </form>
 
+<div class="recovery">
+    <a href="/recovery/">He olvidado mi contraseña</a>
+</div>
+<script>
+    let link = document.querySelector('.recovery a')
+
+    document.querySelector('[name="email"]')
+    .addEventListener('keyup', ev => link.href = '/recovery/' + ev.target.value  )
+</script>
+
 
 <div class="feedback">
 

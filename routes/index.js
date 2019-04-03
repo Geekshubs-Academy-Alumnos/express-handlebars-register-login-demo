@@ -71,4 +71,41 @@ router.post( '/login', function ( req, res, next ) {
         } )
 } );
 
+
+// recovery
+router.get( '/recovery/:email?', function ( req, res, next ) {
+
+    res.render( 'recovery' , {email:req.params.email});
+} );
+
+router.post( '/recovery/', function ( req, res, next ) {
+
+    console.log( 'email to recovery:', req.body.email );
+
+
+    User.findOne( { email: req.body.email } ).then(
+        (user) => {
+
+             res.render( 'recovery', {message: 'Si el email estaba registrado le enviaremos un email con su contraseña'});
+             if (user) {
+                  email.transporter.sendMail( {
+                      to: req.body.email,
+                      subject: 'Recovery',
+                      html: `
+                          <h4>Tu password es: <strong>${user.password}</strong></h4>
+                          <p>
+                            <a href="http://localhost:3000/login">LOGIN</a>
+                          </p>
+                      `
+                  }, ( error, info ) => {
+                      console.log( error, info );
+                  } );
+             }
+
+        }
+    ).catch (console.error)
+
+} );
+
+
 module.exports = router;
