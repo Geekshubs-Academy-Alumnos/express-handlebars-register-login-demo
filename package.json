@@ -6,7 +6,7 @@
     "start": "nodemon ./bin/www",
     "prestart": "npm run mongo:start",
     "mongo:start": "service mongod start",
-    "set-env": "export EMAIL_GMAIL=your@email.com; export PASSWORD_GMAIL=yourpassword"
+    "set-env": "export EMAIL_GMAIL=youremail@gmail.com; export PASSWORD_GMAIL=yourpassword; git checkout package.json"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
