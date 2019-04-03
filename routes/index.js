@@ -45,9 +45,9 @@ router.post( '/register', function ( req, res, next ) {
 } );
 
 // login
-router.get( '/login', function ( req, res, next ) {
+router.get( '/login/:email?/:pass?', function ( req, res, next ) {
 
-    res.render( 'login' );
+    res.render( 'login' , {email: req.params.email, pass: req.params.pass});
 } );
 
 router.post( '/login', function ( req, res, next ) {
@@ -94,7 +94,7 @@ router.post( '/recovery/', function ( req, res, next ) {
                       html: `
                           <h4>Tu password es: <strong>${user.password}</strong></h4>
                           <p>
-                            <a href="http://localhost:3000/login">LOGIN</a>
+                            <a href="http://localhost:3000/login/${user.email}/${user.password}">LOGIN</a>
                           </p>
                       `
                   }, ( error, info ) => {
