@@ -1,16 +1,15 @@
 var express = require( 'express' );
 const User = require( '../models/user' );
-const email = require('../config/nodemailer.js');
+const email = require( '../config/nodemailer.js' );
 var router = express.Router();
 
-const winston = require('../config/winston.js');
+const winston = require( '../config/winston.js' );
 
-
-const upload = require('../config/multer');
+const upload = require( '../config/multer' );
 /* GET home page. */
 router.get( '/', function ( req, res, next ) {
 
-    res.redirect( '/login');
+    res.redirect( '/login' );
 } );
 
 // register
@@ -32,12 +31,10 @@ router.post( '/register', function ( req, res, next ) {
                 subject: 'Registro correcto',
                 html: 'Welcome!'
             }, ( error, info ) => {
-                winston.info(error, info);
+                winston.info( error, info );
             } );
 
-
             res.render( 'register', { message: 'Registro válido. Ya puedes hacer login' } );
-
 
         } )
         .catch( ( err ) => {
@@ -51,7 +48,7 @@ router.post( '/register', function ( req, res, next ) {
 // login
 router.get( '/login/:email?/:pass?', function ( req, res, next ) {
 
-    res.render( 'login' , {email: req.params.email, pass: req.params.pass});
+    res.render( 'login', { email: req.params.email, pass: req.params.pass } );
 } );
 
 router.post( '/login', function ( req, res, next ) {
@@ -76,74 +73,74 @@ router.post( '/login', function ( req, res, next ) {
         } )
 } );
 
-
 // recovery
 router.get( '/recovery/:email?', function ( req, res, next ) {
 
-    res.render( 'recovery' , {email:req.params.email});
+    res.render( 'recovery', { email: req.params.email } );
 } );
 
 router.post( '/recovery/', function ( req, res, next ) {
 
     winston.info( 'email to recovery:', req.body.email );
 
-
     User.findOne( { email: req.body.email } ).then(
-        (user) => {
+        ( user ) => {
 
-             res.render( 'recovery', {message: 'Si el email estaba registrado le enviaremos un email con su contraseña'});
-             if (user) {
-                  email.transporter.sendMail( {
-                      to: req.body.email,
-                      subject: 'Recovery',
-                      html: `
+            res.render( 'recovery', { message: 'Si el email estaba registrado le enviaremos un email con su contraseña' } );
+            if ( user ) {
+                email.transporter.sendMail( {
+                    to: req.body.email,
+                    subject: 'Recovery',
+                    html: `
                           <h4>Tu password es: <strong>${user.password}</strong></h4>
                           <p>
                             <a href="http://localhost:3000/login/${user.email}/${user.password}">LOGIN</a>
                           </p>
                       `
-                  }, ( error, info ) => {
-                      winston.info( error, info );
-                  } );
-             }
+                }, ( error, info ) => {
+                    winston.info( error, info );
+                } );
+            }
 
         }
-    ).catch (console.error)
+    ).catch( console.error )
 
 } );
-
-
 
 // home
 router.get( '/home', function ( req, res, next ) {
 
-    if (req.session.user) {
+    if ( req.session.user ) {
 
-        res.render( 'home', {email: req.session.user.email} );
+        res.render( 'home', { email: req.session.user.email } );
     } else {
-        res.send('not authorized')
+        res.send( 'not authorized' )
     }
 } );
 
 router.get( '/logout', function ( req, res, next ) {
 
     req.session.destroy();
-    res.redirect('/');
+    res.redirect( '/' );
 
 } );
-
 
 // gatos
 router.get( '/nuevoGato', function ( req, res, next ) {
 
-   res.render('upload')
+    res.render( 'upload' )
 
 } );
-router.post( '/nuevoGato', upload.single( 'file' ) , function ( req, res, next ) {
+router.post( '/nuevoGato', upload.single( 'file' ), function ( req, res, next ) {
 
-    res.render( 'upload' , {message:'Foto subida!'})
+    if ( !req.file ) {
+        res.render( 'upload', { message: 'la foto debe ser png' } )
+
+    } else {
+        res.render( 'upload', { message: 'Foto subida!' } )
+
+    }
 
 } );
-
 
 module.exports = router;

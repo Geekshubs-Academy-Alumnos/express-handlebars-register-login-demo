@@ -135,3 +135,305 @@ info: [0mGET /files/res-spread-tricks.js [33m404 [0m8.803 ms - 1892[0m
 
 info: [0mGET /stylesheets/style.css [36m304 [0m0.305 ms - -[0m
 
+info: [0mGET /files/rest-spread-tricks.js [32m200 [0m2.243 ms - 218[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.442 ms - -[0m
+
+info: [0mGET /upload [33m404 [0m7.993 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.642 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: [0mGET /uploads [33m404 [0m83.494 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m2.438 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: [0mGET /upload [33m404 [0m60.744 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m4.422 ms - -[0m
+
+info: [0mGET /uploads [33m404 [0m7.153 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.676 ms - -[0m
+
+info: [0mGET /uploads [33m404 [0m5.249 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.898 ms - -[0m
+
+info: [0mGET /upload [33m404 [0m9.098 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.903 ms - -[0m
+
+info: [0mGET /subirarchivos [33m404 [0m5.749 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.468 ms - -[0m
+
+info: [0mGET /files/ [33m404 [0m4.319 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.656 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: [0mGET /file [33m404 [0m103.731 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m3.013 ms - -[0m
+
+info: [0mGET /upload [33m404 [0m5.765 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.865 ms - -[0m
+
+info: [0mGET /nuevogato [32m200 [0m9.421 ms - 353[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.705 ms - -[0m
+
+info: [0mGET /nuevogato [32m200 [0m5.521 ms - 353[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.376 ms - -[0m
+
+info: conectado con mongodb demo-register
+error: uncaughtException: Unexpected token .
+/home/juan/dev/express-handlebars-demo/config/multer.js:13
+       console.log(..args)
+                   ^
+
+SyntaxError: Unexpected token .
+    at new Script (vm.js:84:7)
+    at createScript (vm.js:264:10)
+    at Object.runInThisContext (vm.js:312:10)
+    at Module._compile (internal/modules/cjs/loader.js:694:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)
+    at Module.load (internal/modules/cjs/loader.js:626:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:558:3)
+    at Module.require (internal/modules/cjs/loader.js:663:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/juan/dev/express-handlebars-demo/routes/index.js:9:16)
+    at Module._compile (internal/modules/cjs/loader.js:734:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)
+    at Module.load (internal/modules/cjs/loader.js:626:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:558:3) {"error":{},"stack":"/home/juan/dev/express-handlebars-demo/config/multer.js:13\n       console.log(..args)\n                   ^\n\nSyntaxError: Unexpected token .\n    at new Script (vm.js:84:7)\n    at createScript (vm.js:264:10)\n    at Object.runInThisContext (vm.js:312:10)\n    at Module._compile (internal/modules/cjs/loader.js:694:28)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)\n    at Module.load (internal/modules/cjs/loader.js:626:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:558:3)\n    at Module.require (internal/modules/cjs/loader.js:663:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/home/juan/dev/express-handlebars-demo/routes/index.js:9:16)\n    at Module._compile (internal/modules/cjs/loader.js:734:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)\n    at Module.load (internal/modules/cjs/loader.js:626:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:558:3)","exception":true,"date":"Thu Apr 04 2019 13:20:08 GMT+0200 (GMT+02:00)","process":{"pid":25203,"uid":1000,"gid":1000,"cwd":"/home/juan/dev/express-handlebars-demo","execPath":"/usr/local/bin/node","version":"v11.9.0","argv":["/usr/local/bin/node","/home/juan/dev/express-handlebars-demo/bin/www"],"memoryUsage":{"rss":65777664,"heapTotal":33767424,"heapUsed":21794152,"external":19094912}},"os":{"loadavg":[1.50830078125,1.07373046875,0.9951171875],"uptime":15101},"trace":[{"column":7,"file":"vm.js","function":"new Script","line":84,"method":null,"native":false},{"column":10,"file":"vm.js","function":"createScript","line":264,"method":null,"native":false},{"column":10,"file":"vm.js","function":"Object.runInThisContext","line":312,"method":"runInThisContext","native":false},{"column":28,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":694,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":745,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":626,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":566,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":558,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":663,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":20,"method":null,"native":false},{"column":16,"file":"/home/juan/dev/express-handlebars-demo/routes/index.js","function":null,"line":9,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":734,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":745,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":626,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":566,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":558,"method":"_load","native":false}]}
+info: conectado con mongodb demo-register
+error: uncaughtException: Unexpected token }
+/home/juan/dev/express-handlebars-demo/config/multer.js:16
+    }
+    ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:84:7)
+    at createScript (vm.js:264:10)
+    at Object.runInThisContext (vm.js:312:10)
+    at Module._compile (internal/modules/cjs/loader.js:694:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)
+    at Module.load (internal/modules/cjs/loader.js:626:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:558:3)
+    at Module.require (internal/modules/cjs/loader.js:663:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/juan/dev/express-handlebars-demo/routes/index.js:9:16)
+    at Module._compile (internal/modules/cjs/loader.js:734:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)
+    at Module.load (internal/modules/cjs/loader.js:626:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:558:3) {"error":{},"stack":"/home/juan/dev/express-handlebars-demo/config/multer.js:16\n    }\n    ^\n\nSyntaxError: Unexpected token }\n    at new Script (vm.js:84:7)\n    at createScript (vm.js:264:10)\n    at Object.runInThisContext (vm.js:312:10)\n    at Module._compile (internal/modules/cjs/loader.js:694:28)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)\n    at Module.load (internal/modules/cjs/loader.js:626:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:558:3)\n    at Module.require (internal/modules/cjs/loader.js:663:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/home/juan/dev/express-handlebars-demo/routes/index.js:9:16)\n    at Module._compile (internal/modules/cjs/loader.js:734:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)\n    at Module.load (internal/modules/cjs/loader.js:626:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:558:3)","exception":true,"date":"Thu Apr 04 2019 13:20:54 GMT+0200 (GMT+02:00)","process":{"pid":25339,"uid":1000,"gid":1000,"cwd":"/home/juan/dev/express-handlebars-demo","execPath":"/usr/local/bin/node","version":"v11.9.0","argv":["/usr/local/bin/node","/home/juan/dev/express-handlebars-demo/bin/www"],"memoryUsage":{"rss":65306624,"heapTotal":33767424,"heapUsed":21425880,"external":18990235}},"os":{"loadavg":[1.66162109375,1.18359375,1.0361328125],"uptime":15147},"trace":[{"column":7,"file":"vm.js","function":"new Script","line":84,"method":null,"native":false},{"column":10,"file":"vm.js","function":"createScript","line":264,"method":null,"native":false},{"column":10,"file":"vm.js","function":"Object.runInThisContext","line":312,"method":"runInThisContext","native":false},{"column":28,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":694,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":745,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":626,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":566,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":558,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":663,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":20,"method":null,"native":false},{"column":16,"file":"/home/juan/dev/express-handlebars-demo/routes/index.js","function":null,"line":9,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":734,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":745,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":626,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":566,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":558,"method":"_load","native":false}]}
+info: conectado con mongodb demo-register
+info: [0mPOST /nuevoGato [32m200 [0m103.683 ms - 365[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m5.220 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m46.527 ms - 365[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.879 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m8.891 ms - 365[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.503 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m41.064 ms - 365[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.487 ms - -[0m
+
+info: [0mGET /files/nosoyun.png [32m200 [0m6.602 ms - 2562002[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m6.704 ms - 365[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.450 ms - -[0m
+
+info: [0mGET /files/soyunjs.png [32m200 [0m2.515 ms - 218[0m
+
+info: [0mGET /files/soyunjs.png [32m200 [0m1.117 ms - 218[0m
+
+info: [0mGET /files/nosoyun.png [36m304 [0m0.695 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: [0mPOST /nuevoGato [32m200 [0m96.386 ms - 365[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m5.360 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m45.395 ms - 365[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.778 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m9.292 ms - 365[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m1.549 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: [0mPOST /nuevoGato [32m200 [0m84.114 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m3.644 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m12.008 ms - 365[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.736 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: [0mPOST /nuevoGato [32m200 [0m68.161 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m3.202 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m23.227 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.539 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m4.922 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.437 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: [0mPOST /nuevoGato [32m200 [0m68.938 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m11.762 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: [0mPOST /nuevoGato [32m200 [0m71.416 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m4.091 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m25.848 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.923 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m135.104 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m1.329 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m5.350 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.456 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: [0mPOST /nuevoGato [32m200 [0m96.195 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m4.773 ms - -[0m
+
+error: uncaughtException: Invalid or unexpected token
+/home/juan/dev/express-handlebars-demo/config/multer.js:24
+    limits: {fileSize: 1e}
+                       ^^
+
+SyntaxError: Invalid or unexpected token
+    at new Script (vm.js:84:7)
+    at createScript (vm.js:264:10)
+    at Object.runInThisContext (vm.js:312:10)
+    at Module._compile (internal/modules/cjs/loader.js:694:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)
+    at Module.load (internal/modules/cjs/loader.js:626:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:558:3)
+    at Module.require (internal/modules/cjs/loader.js:663:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/juan/dev/express-handlebars-demo/routes/index.js:8:16)
+    at Module._compile (internal/modules/cjs/loader.js:734:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)
+    at Module.load (internal/modules/cjs/loader.js:626:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:558:3) {"error":{},"stack":"/home/juan/dev/express-handlebars-demo/config/multer.js:24\n    limits: {fileSize: 1e}\n                       ^^\n\nSyntaxError: Invalid or unexpected token\n    at new Script (vm.js:84:7)\n    at createScript (vm.js:264:10)\n    at Object.runInThisContext (vm.js:312:10)\n    at Module._compile (internal/modules/cjs/loader.js:694:28)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)\n    at Module.load (internal/modules/cjs/loader.js:626:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:558:3)\n    at Module.require (internal/modules/cjs/loader.js:663:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/home/juan/dev/express-handlebars-demo/routes/index.js:8:16)\n    at Module._compile (internal/modules/cjs/loader.js:734:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)\n    at Module.load (internal/modules/cjs/loader.js:626:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:558:3)","exception":true,"date":"Thu Apr 04 2019 13:40:03 GMT+0200 (GMT+02:00)","process":{"pid":27801,"uid":1000,"gid":1000,"cwd":"/home/juan/dev/express-handlebars-demo","execPath":"/usr/local/bin/node","version":"v11.9.0","argv":["/usr/local/bin/node","/home/juan/dev/express-handlebars-demo/bin/www"],"memoryUsage":{"rss":65060864,"heapTotal":33767424,"heapUsed":21392816,"external":18990235}},"os":{"loadavg":[1.45947265625,1.29833984375,1.11181640625],"uptime":16296},"trace":[{"column":7,"file":"vm.js","function":"new Script","line":84,"method":null,"native":false},{"column":10,"file":"vm.js","function":"createScript","line":264,"method":null,"native":false},{"column":10,"file":"vm.js","function":"Object.runInThisContext","line":312,"method":"runInThisContext","native":false},{"column":28,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":694,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":745,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":626,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":566,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":558,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":663,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":20,"method":null,"native":false},{"column":16,"file":"/home/juan/dev/express-handlebars-demo/routes/index.js","function":null,"line":8,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":734,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":745,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":626,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":566,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":558,"method":"_load","native":false}]}
+info: conectado con mongodb demo-register
+info: [0mPOST /nuevoGato [32m200 [0m165.649 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m2.331 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m98.189 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m1.020 ms - -[0m
+
+info: [0mGET /nuevoGato [32m200 [0m8.066 ms - 353[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.928 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: [0mPOST /nuevoGato [32m200 [0m74.838 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m4.721 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m130.890 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m1.292 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: [0mPOST /nuevoGato [32m200 [0m65.143 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m3.348 ms - -[0m
+
+info: [0mGET /nuevoGato [32m200 [0m6.634 ms - 353[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.900 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m119.979 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m1.718 ms - -[0m
+
+info: [0mGET /nuevoGato [32m200 [0m3.968 ms - 353[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.508 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: [0mPOST /nuevoGato [32m200 [0m77.999 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m3.945 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m130.045 ms - 373[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.889 ms - -[0m
+
+info: [0mGET /nuevoGato [32m200 [0m6.716 ms - 353[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.470 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+error: uncaughtException: Cannot find module './winstonas'
+Error: Cannot find module './winstonas'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:609:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:535:25)
+    at Module.require (internal/modules/cjs/loader.js:663:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/juan/dev/express-handlebars-demo/config/multer.js:2:17)
+    at Module._compile (internal/modules/cjs/loader.js:734:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)
+    at Module.load (internal/modules/cjs/loader.js:626:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:558:3)
+    at Module.require (internal/modules/cjs/loader.js:663:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/juan/dev/express-handlebars-demo/routes/index.js:8:16)
+    at Module._compile (internal/modules/cjs/loader.js:734:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)
+    at Module.load (internal/modules/cjs/loader.js:626:32) {"error":{"code":"MODULE_NOT_FOUND"},"stack":"Error: Cannot find module './winstonas'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:609:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:535:25)\n    at Module.require (internal/modules/cjs/loader.js:663:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/home/juan/dev/express-handlebars-demo/config/multer.js:2:17)\n    at Module._compile (internal/modules/cjs/loader.js:734:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)\n    at Module.load (internal/modules/cjs/loader.js:626:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:558:3)\n    at Module.require (internal/modules/cjs/loader.js:663:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/home/juan/dev/express-handlebars-demo/routes/index.js:8:16)\n    at Module._compile (internal/modules/cjs/loader.js:734:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)\n    at Module.load (internal/modules/cjs/loader.js:626:32)","exception":true,"date":"Thu Apr 04 2019 13:45:28 GMT+0200 (GMT+02:00)","process":{"pid":28595,"uid":1000,"gid":1000,"cwd":"/home/juan/dev/express-handlebars-demo","execPath":"/usr/local/bin/node","version":"v11.9.0","argv":["/usr/local/bin/node","/home/juan/dev/express-handlebars-demo/bin/www"],"memoryUsage":{"rss":70184960,"heapTotal":38580224,"heapUsed":21537968,"external":18949529}},"os":{"loadavg":[1.26318359375,1.240234375,1.1416015625],"uptime":16621},"trace":[{"column":15,"file":"internal/modules/cjs/loader.js","function":"Module._resolveFilename","line":609,"method":"_resolveFilename","native":false},{"column":25,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":535,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":663,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":20,"method":null,"native":false},{"column":17,"file":"/home/juan/dev/express-handlebars-demo/config/multer.js","function":null,"line":2,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":734,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":745,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":626,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":566,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":558,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":663,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":20,"method":null,"native":false},{"column":16,"file":"/home/juan/dev/express-handlebars-demo/routes/index.js","function":null,"line":8,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":734,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":745,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":626,"method":"load","native":false}]}
+info: conectado con mongodb demo-register
+info: [0mGET /nuevoGato [36m304 [0m88.637 ms - -[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m1.436 ms - -[0m
+
+info: [0mGET /nuevoGato [36m304 [0m5.071 ms - -[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.699 ms - -[0m
+
