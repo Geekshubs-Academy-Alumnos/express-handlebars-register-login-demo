@@ -3,6 +3,8 @@ const User = require( '../models/user' );
 const email = require('../config/nodemailer.js');
 var router = express.Router();
 
+const winston = require('../config/winston.js');
+
 /* GET home page. */
 router.get( '/', function ( req, res, next ) {
 
@@ -17,18 +19,18 @@ router.get( '/register', function ( req, res, next ) {
 
 router.post( '/register', function ( req, res, next ) {
 
-    console.log( req.body );
+    winston.info( req.body );
     new User( req.body )
         .save()
         .then( () => {
-            console.log( 'registro valido' );
+            winston.info( 'registro valido' );
 
             email.transporter.sendMail( {
                 to: req.body.email,
                 subject: 'Registro correcto',
                 html: 'Welcome!'
             }, ( error, info ) => {
-                console.log(error, info);
+                winston.info(error, info);
             } );
 
 
@@ -37,7 +39,7 @@ router.post( '/register', function ( req, res, next ) {
 
         } )
         .catch( ( err ) => {
-            console.log( 'registro invalido', err );
+            winston.info( 'registro invalido', err );
 
             res.render( 'register', { error: err.message } );
 
@@ -52,11 +54,11 @@ router.get( '/login/:email?/:pass?', function ( req, res, next ) {
 
 router.post( '/login', function ( req, res, next ) {
 
-    console.log( req.body );
+    winston.debug( JSON.stringify( req.body ) );
 
     User.findOne( req.body )
         .then( ( user ) => {
-            console.log( 'login valido', user );
+            winston.info( 'login valido', user );
             if ( user ) {
                 req.session.user = user;
                 res.redirect( '/home' );
@@ -66,7 +68,7 @@ router.post( '/login', function ( req, res, next ) {
             }
         } )
         .catch( ( err ) => {
-            console.log( 'login invalido', err );
+            winston.info( 'login invalido', err );
             res.render( 'login', { error: 'Ups algo no ha ido bien.  vuelva intentarlo más tarde' } );
 
         } )
@@ -81,7 +83,7 @@ router.get( '/recovery/:email?', function ( req, res, next ) {
 
 router.post( '/recovery/', function ( req, res, next ) {
 
-    console.log( 'email to recovery:', req.body.email );
+    winston.info( 'email to recovery:', req.body.email );
 
 
     User.findOne( { email: req.body.email } ).then(
@@ -99,7 +101,7 @@ router.post( '/recovery/', function ( req, res, next ) {
                           </p>
                       `
                   }, ( error, info ) => {
-                      console.log( error, info );
+                      winston.info( error, info );
                   } );
              }
 

@@ -1,0 +1,16 @@
+info: conectado con mongodb demo-register
+info: [0mGET /login [32m200 [0m62.421 ms - 790[0m
+
+info: [0mGET /login [36m304 [0m9.631 ms - -[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m2.227 ms - -[0m
+
+info: login valido {"$__":{"strictMode":true,"selected":{},"getters":{},"_id":"5ca48c9c1bcc3c57cf2e3635","wasPopulated":false,"activePaths":{"paths":{"password":"init","email":"init","_id":"init","__v":"init"},"states":{"ignore":{},"default":{},"init":{"_id":true,"email":true,"password":true,"__v":true},"modify":{},"require":{}},"stateNames":["require","modify","init","default","ignore"]},"pathsToScopes":{},"cachedRequired":{},"emitter":{"_events":{},"_eventsCount":0,"_maxListeners":0},"$options":{"skipId":true,"isNew":false,"willInit":true}},"isNew":false,"_doc":{"_id":"5ca48c9c1bcc3c57cf2e3635","email":"jupegarnica+2@gmail.com","password":"12345678","__v":0},"$init":true}
+info: [0mPOST /login [36m302 [0m42.564 ms - 54[0m
+
+info: [0mGET /home [36m304 [0m2.692 ms - -[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.741 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
