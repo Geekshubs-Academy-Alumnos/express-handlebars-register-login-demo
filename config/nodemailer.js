@@ -1,9 +1,9 @@
 const NodeMailer = require( 'nodemailer' );
 
 
-if ( !process.env.EMAIL_GMAIL && !process.env.PASSWORD_GMAIL )  {
-    throw new Error( 'SET ENV: EMAIL_GMAIL && PASSWORD_GMAIL' )
-}
+// if ( !process.env.EMAIL_GMAIL && !process.env.PASSWORD_GMAIL )  {
+//     throw new Error( 'SET ENV: EMAIL_GMAIL && PASSWORD_GMAIL' )
+// }
 
 
 

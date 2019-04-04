@@ -6,7 +6,7 @@ var router = express.Router();
 /* GET home page. */
 router.get( '/', function ( req, res, next ) {
 
-    res.render( 'index', { title: 'Express' } );
+    res.redirect( '/login');
 } );
 
 // register
@@ -58,7 +58,8 @@ router.post( '/login', function ( req, res, next ) {
         .then( ( user ) => {
             console.log( 'login valido', user );
             if ( user ) {
-                res.render( 'login', { message: 'Bienvenido al castillo! ' + user.email } );
+                req.session.user = user;
+                res.redirect( '/home' );
             } else {
                 res.render( 'login', { error: 'credenciales incorrectos' } );
 
@@ -104,6 +105,26 @@ router.post( '/recovery/', function ( req, res, next ) {
 
         }
     ).catch (console.error)
+
+} );
+
+
+
+// home
+router.get( '/home', function ( req, res, next ) {
+
+    if (req.session.user) {
+
+        res.render( 'home', {email: req.session.user.email} );
+    } else {
+        res.send('not authorized')
+    }
+} );
+
+router.get( '/logout', function ( req, res, next ) {
+
+    req.session.destroy();
+    res.redirect('/');
 
 } );
 
