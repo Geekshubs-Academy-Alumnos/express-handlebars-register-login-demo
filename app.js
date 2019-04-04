@@ -7,6 +7,10 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+var session = require('express-session');
+
+
+
 var app = express();
 
 require( './config/mongo.js' );
@@ -16,6 +20,18 @@ require('./config/nodemailer.js');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+
+
+app.use( session( {
+    // Clave con la que se va a firmar el ID de las cookies
+    secret: '1234',
+    // Nombre de la cookie
+    name: 'register-demo',
+    // Si se debe reguardar el objeto completo o no en cada petición.
+    resave: true,
+    // Si la sesión se debe guardar al crearla aunque no la modifiquemos.
+    saveUninitialized: true
+} ) );
 
 app.use(logger('dev'));
 app.use(express.json());
