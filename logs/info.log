@@ -1,1 +1,137 @@
 info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: [0mGET /nuevogato [32m200 [0m93.585 ms - 286[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m2.641 ms - -[0m
+
+info: [0mPOST /upload [33m404 [0m21.116 ms - 1887[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.734 ms - -[0m
+
+info: [0mPOST /upload [33m404 [0m5.840 ms - 1887[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.558 ms - -[0m
+
+info: [0mPOST /upload [33m404 [0m4.289 ms - 1887[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.488 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: [0mPOST /upload [32m200 [0m83.100 ms - 310[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m3.534 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: [0mPOST /upload [33m404 [0m72.227 ms - 1887[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m3.693 ms - -[0m
+
+info: [0mGET /nuevogato [32m200 [0m8.750 ms - 301[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.880 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m4.082 ms - 313[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.474 ms - -[0m
+
+info: [0mGET /nuevogato [32m200 [0m3.950 ms - 310[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.422 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: [0mPOST /nuevoGato [32m200 [0m62.275 ms - 334[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m3.994 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m4.712 ms - 365[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.742 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: [0mGET /nuevogato [32m200 [0m58.802 ms - 353[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m2.405 ms - -[0m
+
+info: [0mPOST /nuevoGato [31m500 [0m17.470 ms - 395[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.947 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: [0mPOST /nuevoGato [32m200 [0m76.131 ms - 365[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m11.332 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m35.288 ms - 365[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m1.108 ms - -[0m
+
+info: [0mPOST /nuevoGato [32m200 [0m10.834 ms - 365[0m
+
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: [0mGET /files/rest-spread-tricks.js [33m404 [0m59.976 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m2.711 ms - -[0m
+
+info: conectado con mongodb demo-register
+info: conectado con mongodb demo-register
+info: [0mGET /files/rest-spread-tricks.js [32m200 [0m6.153 ms - 218[0m
+
+info: [0mGET /files/scott-webb-272557-unsplash.jpg [32m200 [0m1.236 ms - 2562002[0m
+
+info: conectado con mongodb demo-register
+info: [0mGET /files [36m301 [0m4.249 ms - 177[0m
+
+info: [0mGET /files [36m301 [0m0.916 ms - 177[0m
+
+info: [0mGET /files/ [33m404 [0m91.517 ms - 1892[0m
+
+info: [0mGET /files/ [33m404 [0m3.476 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [32m200 [0m6.269 ms - 111[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m1.018 ms - -[0m
+
+info: [0mGET /favicon.ico [33m404 [0m3.936 ms - 1892[0m
+
+info: [0mGET /files/uploads [33m404 [0m10.059 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m1.046 ms - -[0m
+
+info: [0mGET /files/ [33m404 [0m5.355 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.531 ms - -[0m
+
+info: [0mGET /files/ [33m404 [0m7.703 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.531 ms - -[0m
+
+info: [0mGET /files/rest-spread-tricks.js [32m200 [0m1.305 ms - 218[0m
+
+info: [0mGET /files/rest-spread-tricks.js [36m304 [0m0.927 ms - -[0m
+
+info: [0mGET /files/res.spread-trick.js [33m404 [0m10.108 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.679 ms - -[0m
+
+info: [0mGET /files/res-spread-trick.js [33m404 [0m6.371 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.507 ms - -[0m
+
+info: [0mGET /files/res-spread-tricks.js [33m404 [0m8.803 ms - 1892[0m
+
+info: [0mGET /stylesheets/style.css [36m304 [0m0.305 ms - -[0m
+

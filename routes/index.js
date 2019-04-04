@@ -5,6 +5,8 @@ var router = express.Router();
 
 const winston = require('../config/winston.js');
 
+
+const upload = require('../config/multer');
 /* GET home page. */
 router.get( '/', function ( req, res, next ) {
 
@@ -127,6 +129,19 @@ router.get( '/logout', function ( req, res, next ) {
 
     req.session.destroy();
     res.redirect('/');
+
+} );
+
+
+// gatos
+router.get( '/nuevoGato', function ( req, res, next ) {
+
+   res.render('upload')
+
+} );
+router.post( '/nuevoGato', upload.single( 'file' ) , function ( req, res, next ) {
+
+    res.render( 'upload' , {message:'Foto subida!'})
 
 } );
 
